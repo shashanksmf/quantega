@@ -387,6 +387,9 @@ padding: 0px;
 }
 .floating-btn{
       text-align: end;
+      position: fixed;
+    bottom: 50px;
+    right: 30px;
 }
 .float{
     padding-left: 10px;
@@ -405,6 +408,3 @@ padding: 0px;
 .small-language{
       padding-top: 30px;
 }
-/* .world-lang{
-  margin-left:  5px;
-} */
