@@ -3,9 +3,9 @@
 
 <head>
   <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+    src="https://code.jquery.com/jquery-1.12.4.js"
+    integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+    crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -337,7 +337,7 @@
           <a href="#" class="fa fa-youtube"></a>
           <a href="#" class="fa fa-instagram"></a>
         </div>
-        <p class="footer-connect-links">Phone Number:&nbsp; +91 (40) 409 122 03<button type="button" class="btn btn-link">Email Us</button>For desktop/laptop related queries or complaints, visit <a>TollFree number</a>.</p>
+        <p class="footer-connect-links">Phone Number:&nbsp; +91 (40) 409 122 03<button type="button" class="btn btn-link" id="email-us">Email Us</button>For desktop/laptop related queries or complaints, visit <a>TollFree number</a>.</p>
       </div>
 
     </div>
@@ -362,6 +362,55 @@
 <div class="button"><img class="img-flot"src="imgs/chat-icon-dots.svg" alt=""></div>
 </div>
   </footer>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">NAME:</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="NAME">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">EMAIL:</label>
+              <input type="email" class="form-control" id="recipient-email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">ORGANIZATION:</label>
+              <input type="text" class="form-control" id="recipient-organization" placeholder="organization">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">CONTACT NUMBER:</label>
+              <input type="number" class="form-control" id="recipient-number" placeholder="Number">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">REGION:</label>
+              <input type="text" class="form-control" id="recipient-region" placeholder="Region">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">INQUIRY TYPE:</label>
+              <input type="text" class="form-control" id="recipient-inquiry-type" placeholder="InquiryType">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">MESSAGE:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+
+</div>
 <script>
 $(window).on("scroll", function() {
     if($(window).scrollTop() > 100) {
@@ -370,6 +419,9 @@ $(window).on("scroll", function() {
         //remove the background property so it comes transparent again (defined in your css)
        $("header").removeClass("active");
     }
+});
+$('#email-us').click(function () {
+  $('.modal').modal('show');
 });
 </script>
 </body>
