@@ -1,0 +1,146 @@
+.row {
+  margin: 0 !important;
+}
+
+.new-container {
+  height: 100%;
+  margin-top: 100px;
+  width: 100%;
+}
+
+new-nav div {}
+
+new-nav {
+  width: 100%;
+  top: 52px;
+  position: fixed;
+  display: flex;
+  border-bottom: 2px solid #ddd;
+  background: #fff;
+  z-index: 99999;
+}
+
+.ul-container {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.li-content {
+  float: right;
+  margin: 2px;
+}
+
+.li-content a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.li-content a:hover:not(.active) {
+  background-color: #007bcd;
+  color: #fff;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.img-div {
+  height: 450px;
+  top: 104px;
+  position: inherit !important;
+  background: url('https://www.hcltech.com/sites/default/files/general_event_campaign_image/banner.jpg');
+}
+
+.tooltip {
+  z-index: 99999;
+}
+
+.map-div {
+  top: 100px;
+  height: 500px;
+  /* background: url('../imgs/world.png'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative !important;
+}
+
+.map-marker {
+  margin: -3px 0 0 -3px;
+  position: absolute;
+  height: 12px;
+  cursor: pointer;
+  width: 12px;
+  background: #f5642d;
+  border-radius: 50%;
+  transition: all 300ms;
+  will-change: transition;
+}
+
+
+
+.map-marker:hover div {
+  transform: scale(3);
+}
+
+.map-holder {
+  height: min-content;
+  text-align: center;
+}
+
+.animate1 {
+  transition: all 500ms;
+  will-change: transform;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background: orange;
+  position: absolute;
+  animation: mychange infinite;
+  animation-duration: 3s;
+  border: 1px solid orange;
+}
+@keyframes mychange {
+  from {
+    background: #f5642d;
+  }
+  to {
+    background: #fff;
+  }
+}
+.point1{
+  top:28.537534%;left:30.704688%;
+}
+.point2{
+  top:52.837534%;left:68.604688%;
+}
+.point3{
+  top:61.837534%;;left:54.304688%;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.rounded-circle{
+  border-radius: 50%;
+  transition: transform 1s;
+}
+.rounded-circle:hover,
+.rounded-circle:active,
+.rounded-circle:focus {
+/**adjust scale to desired size,
+add browser prefixes**/
+-ms-transform: scale(2.5);
+-moz-transform: scale(2.5);
+-webkit-transform: scale(2.5);
+-o-transform: scale(2.5);
+transform: scale(1.2);
+position:relative;
+z-index:100;
+}
