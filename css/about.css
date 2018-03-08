@@ -82,8 +82,6 @@ new-nav {
   will-change: transition;
 }
 
-
-
 .map-marker:hover div {
   transform: scale(3);
 }
@@ -105,6 +103,7 @@ new-nav {
   animation-duration: 3s;
   border: 1px solid orange;
 }
+
 @keyframes mychange {
   from {
     background: #f5642d;
@@ -113,34 +112,77 @@ new-nav {
     background: #fff;
   }
 }
-.point1{
-  top:28.537534%;left:30.704688%;
+
+.point1 {
+  top: 28.537534%;
+  left: 30.704688%;
 }
-.point2{
-  top:52.837534%;left:68.604688%;
+
+.point2 {
+  top: 52.837534%;
+  left: 68.604688%;
 }
-.point3{
-  top:61.837534%;;left:54.304688%;
+
+.point3 {
+  top: 61.837534%;
+  ;
+  left: 54.304688%;
 }
+
 .card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 2s;
+  overflow: hidden;
+  height: 350px;
 }
-.rounded-circle{
+
+.rounded-circle {
   border-radius: 50%;
-  transition: transform 1s;
+  transition:  all .4s ease;
+  width: 180px;
+  height: auto;
+  margin: 20px;
 }
-.rounded-circle:hover,
-.rounded-circle:active,
-.rounded-circle:focus {
-/**adjust scale to desired size,
+
+.rounded-circle:hover, .rounded-circle:active, .rounded-circle:focus {
+  /**adjust scale to desired size,
 add browser prefixes**/
--ms-transform: scale(2.5);
+  /* -ms-transform: scale(2.5);
 -moz-transform: scale(2.5);
 -webkit-transform: scale(2.5);
 -o-transform: scale(2.5);
-transform: scale(1.2);
-position:relative;
-z-index:100;
+transform: scale(1.2); */
+  width: 220px;
+  position: relative;
+  z-index: 100;
+  margin: 0px;
+}
+
+@-webkit-keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 200px;
+  }
+}
+
+.leadership {
+  padding-top: 50px;
+  height: 600px;
+}
+
+.leadership h2 {
+  padding-bottom: 50px;
+}
+
+.avatar {
+  display: inline-block;
+      height: 225px;
+  overflow: hidden;
+}
+
+.team-section {
+  width: 100%;
 }

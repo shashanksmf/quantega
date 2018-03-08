@@ -194,7 +194,7 @@
       <div class="chat-box">
         <div class="chat-box-header">
           ChatBox
-          <span class="chat-box-toggle"><img src="./imgs/close.png" alt="close"></span>
+          <span class="chat-box-toggle"><img class="img1" src="./imgs/close.png" alt="close"></span>
         </div>
         <div class="chat-box-body">
           <div class="chat-box-overlay">
@@ -207,7 +207,7 @@
         <div class="chat-input">
           <form>
             <input type="text" id="chat-input" placeholder="Send a message..." />
-            <button type="submit" class="chat-submit" id="chat-submit"><img src="./imgs/send1.png" alt="send"></button>
+            <button type="button" class="chat-submit" id="chat-submit"><img src="./imgs/send1.png" alt="send"></button>
           </form>
         </div>
       </div>
@@ -441,20 +441,20 @@
 
             <div class="form-group">
               <label class="control-label " for="group">
-                CONTACT NUMBER
+                Contact Number
               </label>
               <div class="input-group">
                 <div class="input-group-addon">
                   <span><i class="large material-icons">local_phone</i></span>
                 </div>
-                <input class="form-control" id="recipient-number" type="number" placeholder="CONTACT NUMBER" />
+                <input class="form-control" id="recipient-number" type="number" placeholder="Contact Number" />
               </div>
             </div>
           </div>
           <div class="col-sm-6 padding-adj">
             <div class="form-group">
               <label class="control-label " for="group">
-                REGION
+                Region
               </label>
               <div class="input-group">
                 <div class="input-group-addon">
@@ -465,7 +465,7 @@
             </div>
             <div class="form-group">
               <label class="control-label " for="group">
-                INQUIRY TYPE:
+                Inquiry Type
               </label>
               <div class="input-group">
                 <div class="input-group-addon">
@@ -498,32 +498,13 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal" name="button">Close</button>
+          <button type="button" class="btn btn-warning" data-dismiss="modal" name="button">Close</button>
           <button type="button" class="btn btn-primary" name="button">Send</button>
         </div>
       </div>
     </div>
   </div>
-  <div class="chat-box">
-    <div class="chat-box-header">
-      ChatBot
-      <span class="chat-box-toggle"><i class="material-icons">close</i></span>
-    </div>
-    <div class="chat-box-body">
-      <div class="chat-box-overlay">
-      </div>
-      <div class="chat-logs">
 
-      </div>
-      <!--chat-log -->
-    </div>
-    <div class="chat-input">
-      <form>
-        <input type="text" id="chat-input" placeholder="Send a message..." />
-        <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
-      </form>
-    </div>
-  </div>
 
   <script>
     $(window).on("scroll", function() {
@@ -569,7 +550,7 @@
         var str = "";
         str += "<div id='cm-msg-" + INDEX + "' class=\"chat-msg " + type + "\">";
         str += "          <span class=\"msg-avatar\">";
-        // str += "            <img src=\"https:\/\/image.crisp.im\/avatar\/operator\/196af8cc-f6ad-4ef7-afd1-c45d5231387c\/240\/?1483361727745\">";
+        str += "            <img src=\"https:\/\/image.crisp.im\/avatar\/operator\/196af8cc-f6ad-4ef7-afd1-c45d5231387c\/240\/?1483361727745\">";
         str += "          <\/span>";
         str += "          <div class=\"cm-msg-text\">";
         str += msg;
