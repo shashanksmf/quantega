@@ -139,10 +139,11 @@ new-nav {
 
 .rounded-circle {
   border-radius: 50%;
-  transition:  all .4s ease;
+  transition: all .4s ease;
   width: 180px;
   height: auto;
-  margin: 20px;
+  /* margin: 20px; */
+  max-width: 180px;
 }
 
 .rounded-circle:hover, .rounded-circle:active, .rounded-circle:focus {
@@ -153,7 +154,7 @@ add browser prefixes**/
 -webkit-transform: scale(2.5);
 -o-transform: scale(2.5);
 transform: scale(1.2); */
-  width: 220px;
+  transform: scale(1.2);
   position: relative;
   z-index: 100;
   margin: 0px;
@@ -179,8 +180,10 @@ transform: scale(1.2); */
 
 .avatar {
   display: inline-block;
-      height: 225px;
+  height: 180px;
   overflow: hidden;
+      max-width: 100%;
+          border-radius: 100px;
 }
 
 .team-section {

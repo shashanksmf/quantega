@@ -530,3 +530,9 @@ select{
   background: #337ab7;
   color:#fff;
 }
+#adj-pan{
+  left: 0;
+}
+#collect-chat-powered-by{
+  display: none !important;
+}

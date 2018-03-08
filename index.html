@@ -10,6 +10,19 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" charset="utf-8"></script>
   <link rel="stylesheet" href="css/chatbox.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type="text/javascript">
+    ! function(t, e) {
+      "use strict";
+      var r = function(t) {
+        try {
+          var r = e.head || e.getElementsByTagName("head")[0],
+            a = e.createElement("script");
+          a.setAttribute("type", "text/javascript"), a.setAttribute("src", t), r.appendChild(a)
+        } catch (t) {}
+      };
+      t.CollectId = "5aa1409e3256d7b631022506", r("https://s3.amazonaws.com/collectchat/launcher.js")
+    }(window, document);
+  </script>
   <!-- <script src="index.js"></script> -->
 </head>
 
@@ -69,7 +82,18 @@
           <div class="main-item">
             <span>THINGQ</span>
           </div>
+          <div class="dropdown-content" id="adj-pan">
+            <div class="column">
+              <a href="#">ThinQ Home</a>
+              <a href="#">ThinQ Indie</a>
+              <a href="#">ThinQ Tag</a>
+              <a href="#">ThinQ Category</a>
+              <a href="#">ThinQ Search</a>
+            </div>
+
+          </div>
         </div>
+
         <div class="dropdown-item">
           <div class="main-item">
             <span>CAREERS</span>
@@ -186,23 +210,24 @@
   </header>
   <div style="height: 1000px;">
     <div id="body">
-      <div id="chat-circle" class="btn btn-raised">
+      <!-- <div id="chat-circle" class="btn btn-raised">
         <div id="chat-overlay"></div>
         <div class="button"><img class="img-flot" src="imgs/chat-icon-dots.svg" alt=""></div>
-      </div>
+      </div> -->
 
-      <div class="chat-box">
+      <!-- <div class="chat-box">
         <div class="chat-box-header">
           ChatBox
           <span class="chat-box-toggle"><img class="img1" src="./imgs/close.png" alt="close"></span>
         </div>
         <div class="chat-box-body">
           <div class="chat-box-overlay">
+
           </div>
           <div class="chat-logs">
 
           </div>
-          <!--chat-log -->
+          chat-log
         </div>
         <div class="chat-input">
           <form>
@@ -210,14 +235,13 @@
             <button type="button" class="chat-submit" id="chat-submit"><img src="./imgs/send1.png" alt="send"></button>
           </form>
         </div>
-      </div>
+      </div>  -->
 
 
 
 
     </div>
   </div>
-
   <footer>
     <div class="footer row">
       <div class="col-md-4 f-col">
@@ -621,7 +645,9 @@
         $("#chat-circle").toggle('scale');
         $(".chat-box").toggle('scale');
       })
-
+    })
+    $('#collect-chat-launcher-container').click(function () {
+      $('#collect-chat-powered-by').css('display','none');
     })
   </script>
 </body>
