@@ -1,0 +1,128 @@
+footer{
+ padding-top: 20px;
+ left:0;
+  bottom:0;
+
+  background:#f6f6f6;
+
+  height: fit-content;
+    padding: 9px 15px 9px 15px;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.h-c-social {
+    max-width: 100%;
+}
+.h-c-social__group {
+    flex-wrap: nowrap;
+    padding-right: 70px;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    display: flex;
+    margin: 0;
+
+}
+
+.h-c-social__title.h-c-social__title--inline {
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    line-height: 24px;
+    margin-right: 33px;
+}
+.h-c-social__title {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+ul.h-no-bullet, ol.h-no-bullet {
+    margin-left: 0;
+}
+ul.h-no-bullet, ol.h-no-bullet, dl.h-no-bullet, li.h-no-bullet {
+    list-style: none;
+}
+
+/* footer */
+
+
+
+.ul-bullet{
+ list-style-type: none;
+ padding-left: 0px;
+}
+.h-heading h4{
+  padding-bottom: 15px;
+}
+
+.h-c-footer__global {
+    margin: 0 auto;
+    padding: 30px 16px 20px;
+}
+.ul-bullet li{
+  padding-bottom: 8px;
+  color: #414141;
+  font-weight:400;
+}
+.h-c-footer__global-links a{
+  color: #414141;
+}
+.disp-list{
+  display: flex; justify-content: center; position: relative;
+}
+.disp-item {
+  position: absolute;
+right: 0;
+}
+.drop-cont{
+  left: -365px; margin-top: 4px;
+}
+.glo-ert{
+  padding-bottom: 3px;
+}
+.small-language{
+  padding-left: 0px;
+}
+.nw-nav{
+  display: flex;
+}
+.row-sec-1{
+   padding: 20px;     box-shadow: 0px 1px 1px darkgrey;
+}
+.h-c-footer_upper{
+  color: #312727;
+}
+.h-c-social_group{
+  display: flex; align-items: center;
+}
+.h-c-new{
+padding-left: 35px;
+}
+.row-sec-2{
+  padding: 20px;     box-shadow: 0px 1px 1px darkgrey;
+}
+.row-sec-3{
+   padding: 20px;
+}
+.h-c-footer__global-links{
+  display:flex; padding-left: 20px;
+}
+.h-c-footer-global{
+margin-right: 50px;
+}
+.h-c-footer__link-new{
+   margin-left: 1056px;
+}
+.div-height{
+  height:1000px;
+}
+.global-icon{
+  position: absolute;
+    left: 180px;
+}
+.global-icon-dd{
+  left: -320px;
+margin-top: 4px;
+}
+.new-global{
+  padding-bottom: 2px;
+}
