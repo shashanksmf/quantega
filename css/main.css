@@ -564,6 +564,7 @@ margin: 10px;
   align-items: center;
   text-align: left;
   padding: 5px;
+  cursor: pointer;
 }
 .mar-20{
     margin: 0 15px;
@@ -588,6 +589,9 @@ font-size: 10px;
 }
 .cons-head{
   font-size: 13px;
+}
+.cons-head p{
+  font-size: 11px;
 }
 .cons-head-br{
   font-size: 6px;
@@ -655,6 +659,7 @@ padding: 7px;
   color: #f7f4f4;
   background-color: #7d93a2;
   padding-bottom: 10px!important;
+  margin-bottom: 15px !important;
 }
 .cons-img{
       height: 12px;
@@ -706,4 +711,47 @@ padding-bottom: 20px;
     padding: 3px;
     padding-bottom: 10px;
 
+}
+.mi{
+      height: 15px;
+}
+.fl11{
+  bottom: 10px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+
+}
+.intercom{
+      color: #aaa;
+    font-size: 11px;
+}
+.input-group-addon {
+    background-color: #ffffff !important;
+        border: 0px !important;
+          padding: 2px 20px !important;
+}
+.mi1{
+      height: 23px;
+}
+
+  #chat-input-new {
+  width: 100%;
+    border: 0px;
+background-color: white;
+padding-left: 20px;
+font-size: 12px;
+
+}
+
+#gif{
+  height: 20px;
+  margin-right: 5px;
+}
+#smile-icon{
+  height: 16px;
+  margin-right: 5px;
+}
+#clip-icon{
+  height: 17px;
 }
