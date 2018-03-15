@@ -247,7 +247,7 @@
 
             </div>
             <div class=" chat-box-img-flex" >
-              <span class="chat-box-toggle"><img class="img1" src="./imgs/close.png" alt="close"></span>
+              <span class="chat-box-toggle"><img class="chatbox1-close-icon" src="./imgs/close.png" alt="close"></span>
             </div>
             </div>
             <div class="chat-box-body">
@@ -256,11 +256,11 @@
               </div>
               <div class="chat-logs">
                 <div class="chat-per">
-                  <div class="fl1">
+                  <div class="chatbox1-body">
                     <span class="msg-avatar">
                       <img src="https://image.crisp.im/avatar/operator/196af8cc-f6ad-4ef7-afd1-c45d5231387c/240/?1483361727745" class="img-per">
                     </span>
-                    <div class="mar-20">
+                    <div class="chatbox1-heads-text">
                       <span class="gray-text span-jan-1">Janhavi</span><br>
                       <span>
                         <span class="gray-text span-support-1">You:</span> Thanks you for support</span>
@@ -274,11 +274,11 @@
                     </div>
                   </div>
                   <div class="chat-per">
-                    <div class="fl1">
+                    <div class="chatbox1-body">
                       <span class="msg-avatar">
                         <img src="https://image.crisp.im/avatar/operator/196af8cc-f6ad-4ef7-afd1-c45d5231387c/240/?1483361727745" class="img-per">
                       </span>
-                      <div class="mar-20">
+                      <div class="chatbox1-heads-text">
                         <span class="gray-text span-jan-2">Janhavi</span><br>
                         <span>
                           <span class="gray-text span-support-1">You:</span> Thanks you for support</span>
@@ -309,7 +309,7 @@
           <div class="chat-box-header2">
             <img id="left-arrow-chatbox2" class="left-icon-chatbox2" src="./imgs/left-arrow.png" alt="">
             <span class="cons-head">IBM Cloud</span>
-              <span class="chat-box-toggle"><img class="img11" src="./imgs/close.png" alt="close"></span>
+              <span class="chat-box-toggle"><img class="chatbox2-close-icon" src="./imgs/close.png" alt="close"></span>
               <div class="row img-icons-in">
                 <span class="msg-avatar">
                   <img src="https://image.crisp.im/avatar/operator/196af8cc-f6ad-4ef7-afd1-c45d5231387c/240/?1483361727745" class="img-per">
@@ -342,7 +342,7 @@
               </div>
               <div class="chat-logs2">
                 <div class="chat-per2">
-                  <div class="fl11">
+                  <div class="intercom-div">
                     <img class="mi" src="./imgs/intercon-icon.png" alt="">
                     <span class="intercom">
                       We run on Intercom
@@ -358,9 +358,9 @@
                   <div class="input-group">
                     <input type="text" id="chat-input-new" placeholder="Send a message..." />
                     <!-- <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2"> -->
-                    <span class="input-group-addon" id="basic-addon2">    <img id="gif" class="mi1" src="./imgs/gif.png" alt="">
-                      <img id="smile-icon" class="mi1" src="./imgs/smile-icon.png" alt="">
-                    <img id="clip-icon" class="mi1" src="./imgs/clip-icon.png" alt=""></span>
+                    <span class="input-group-addon" id="basic-addon2">    <img id="gif" class="message-icons" src="./imgs/gif.png" alt="">
+                      <img id="smile-icon" class="message-icons" src="./imgs/smile-icon.png" alt="">
+                    <img id="clip-icon" class="message-icons" src="./imgs/clip-icon.png" alt=""></span>
                   </div>
 
                   </form>
@@ -369,7 +369,7 @@
         <div class="chatbox3" style="display:none">
           <div class="chat-box-header2 chat-id-header">
 
-              <span class="chat-box-toggle"><img class="img11 close-icon" src="./imgs/close.png" alt="close"></span>
+              <span class="chat-box-toggle"><img class="chatbox2-close-icon close-icon" src="./imgs/close.png" alt="close"></span>
               <div class="row img-icons-in">
                 <img id="left-arrow" class="left-icon-chatbox" src="./imgs/left-arrow.png" alt="">
                 <span class="msg-avatar chat-img-box-header">
@@ -400,7 +400,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="fl11">
+                  <div class="intercom-div">
                     <img class="mi" src="./imgs/intercon-icon.png" alt="">
                     <span class="intercom">
                       We run on Intercom
@@ -416,9 +416,9 @@
                   <div class="input-group">
                     <input type="text" id="chat-input-new" placeholder="write a reply..." />
                     <!-- <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2"> -->
-                    <span class="input-group-addon" id="basic-addon2">    <img id="gif" class="mi1" src="./imgs/gif.png" alt="">
-                      <img id="smile-icon" class="mi1" src="./imgs/smile-icon.png" alt="">
-                    <img id="clip-icon" class="mi1" src="./imgs/clip-icon.png" alt=""></span>
+                    <span class="input-group-addon" id="basic-addon2">    <img id="gif" class="message-icons" src="./imgs/gif.png" alt="">
+                      <img id="smile-icon" class="message-icons" src="./imgs/smile-icon.png" alt="">
+                    <img id="clip-icon" class="message-icons" src="./imgs/clip-icon.png" alt=""></span>
                   </div>
 
                   </form>
@@ -833,7 +833,9 @@
       })
 
       $("#chat-circle").click(function() {
+        console.log('click');
         $("#chat-circle").toggle('scale');
+          console.log("hiiii");
         $(".chat-box").toggle('scale');
       })
 
@@ -868,7 +870,7 @@
       $('.chatbox2').slideDown();
     console.log('click');
     })
-    $('.fl1').click(function () {
+    $('.chatbox1-body').click(function () {
       console.log('click');
       $('.chatbox1').slideUp();
         $('.chatbox3').slideDown();
@@ -883,6 +885,7 @@
         $('.chatbox2').slideUp();
         $('.chatbox1').slideDown();
     })
+
 
   </script>
 </body>
