@@ -18,6 +18,20 @@
   <header>
 
     <nav class="Native" style="display: flex;">
+      <div class="nav-list">
+        <img src="./imgs/list-icon.png" href="#menu" class="menu-link" />
+        <nav id="menu" role="navigation">
+          <ul class="nav-menu-dd">
+            <li><a href="#">INDUSTRIES</a></li>
+            <li><a href="#">SERVICES & PRODUCTS</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="#">THINGQ</a></li>
+            <li><a href="career.html">CAREERS</a></li>
+            <li><a href="#">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
+      </div>
       <div class="app-logo">
         LOGO
       </div>
@@ -226,10 +240,10 @@
       <div id="chat-circle" class="btn btn-raised">
         <div class="tile_mayihelpu" runat="server" id="tile_MIHU" style="display: block;">
           <img src="./imgs/icon_mail.png" class="icon_mail">
-          <span>May I assist you?</span>
+          <span>May I Assist You ??</span>
           <div class="mihu_iconsCont">
             <img src="./imgs/maximize_mihu.png" class="maximize_tile" id="mihu_maximize_popup">
-            <img src="./imgs/close_mihu.png" class="close_mihu_tile" id="close_mihu_tile">
+            <!-- <img src="./imgs/close_mihu.png" class="close_mihu_tile" id="close_mihu_tile"> -->
           </div>
         </div>
         <!-- <div id="chat-overlay"></div>
@@ -239,66 +253,66 @@
       <div class="chat-box">
         <div class="chatbox1">
           <div class="chat-box-header">
-            <div class="" >
+            <div class="">
               <ul class="ul-list-remove-bullate">
                 <li><span class="cons-head">Conversations</span></li>
-                <li><span>with IBM Cloud</span></li>
+                <li><span class="cons-head-text">with IBM Cloud</span></li>
               </ul>
 
             </div>
-            <div class=" chat-box-img-flex" >
+            <div class=" chat-box-img-flex">
               <span class="chat-box-toggle"><img class="chatbox1-close-icon" src="./imgs/close.png" alt="close"></span>
             </div>
-            </div>
-            <div class="chat-box-body">
-              <div class="chat-box-overlay">
+          </div>
+          <div class="chat-box-body">
+            <div class="chat-box-overlay">
 
-              </div>
-              <div class="chat-logs">
-                <div class="chat-per">
-                  <div class="chatbox1-body">
-                    <span class="msg-avatar">
-                      <img src="https://image.crisp.im/avatar/operator/196af8cc-f6ad-4ef7-afd1-c45d5231387c/240/?1483361727745" class="img-per">
+            </div>
+            <div class="chat-logs">
+              <div class="chat-per">
+                <div class="chatbox1-body">
+                  <span class="msg-avatar">
+                      <img src="./imgs/user-img-icon.png" class="img-per">
                     </span>
-                    <div class="chatbox1-heads-text">
-                      <span class="gray-text span-jan-1">Janhavi</span><br>
-                      <span>
+                  <div class="chatbox1-heads-text">
+                    <span class="gray-text span-jan-1">Janhavi</span><br>
+                    <span>
                         <span class="gray-text span-support-1">You:</span> Thanks you for support</span>
-                      </div>
-                      <div class="lft-time">
-                        <span class="gray-text span-jst-now-1">Just Now</span>
-                        <span>
+                  </div>
+                  <div class="lft-time">
+                    <span class="gray-text span-jst-now-1">Just Now</span>
+                    <span>
                           <img src="./imgs/s-chat-icon.png" class="img-chat gray-text img-1" />
                         </span>
-                      </div>
-                    </div>
                   </div>
-                  <div class="chat-per">
-                    <div class="chatbox1-body">
-                      <span class="msg-avatar">
-                        <img src="https://image.crisp.im/avatar/operator/196af8cc-f6ad-4ef7-afd1-c45d5231387c/240/?1483361727745" class="img-per">
+                </div>
+              </div>
+              <div class="chat-per">
+                <div class="chatbox1-body">
+                  <span class="msg-avatar">
+                        <img src="./imgs/user-img-icon.png" class="img-per">
                       </span>
-                      <div class="chatbox1-heads-text">
-                        <span class="gray-text span-jan-2">Janhavi</span><br>
-                        <span>
+                  <div class="chatbox1-heads-text">
+                    <span class="gray-text span-jan-2">Janhavi</span><br>
+                    <span>
                           <span class="gray-text span-support-1">You:</span> Thanks you for support</span>
-                        </div>
-                        <div class="lft-time">
-                          <span class="gray-text span-jst-now-1">Just Now</span>
-                          <span>
+                  </div>
+                  <div class="lft-time">
+                    <span class="gray-text span-jst-now-1">Just Now</span>
+                    <span>
                             <img src="./imgs/s-chat-icon.png" class="img-chat gray-text img-2" />
                           </span>
-                        </div>
-                      </div>
-                    </div>
                   </div>
-
-                  <div class="row row-conversation">
-                    <button type="button" class="btn conversations-btn"><img src="./imgs/note-interface-symbol (1).png" class="cons-img" /><span class="new-con"> New Conversation</span></button>
-                  </div>
-
                 </div>
-                <!-- <div class="chat-input">
+              </div>
+            </div>
+
+            <div class="row row-conversation">
+              <button type="button" class="btn conversations-btn"><img src="./imgs/note-interface-symbol (1).png" class="cons-img" /><span class="new-con"> New Conversation</span></button>
+            </div>
+
+          </div>
+          <!-- <div class="chat-input">
                   <form>
                     <input type="text" id="chat-input" placeholder="Send a message..." />
                     <button type="button" class="chat-submit" id="chat-submit"><img src="./imgs/send1.png" alt="send"></button>
@@ -309,120 +323,122 @@
           <div class="chat-box-header2">
             <img id="left-arrow-chatbox2" class="left-icon-chatbox2" src="./imgs/left-arrow.png" alt="">
             <span class="cons-head">IBM Cloud</span>
-              <span class="chat-box-toggle"><img class="chatbox2-close-icon" src="./imgs/close.png" alt="close"></span>
-              <div class="row img-icons-in">
-                <span class="msg-avatar">
-                  <img src="https://image.crisp.im/avatar/operator/196af8cc-f6ad-4ef7-afd1-c45d5231387c/240/?1483361727745" class="img-per">
+            <span class="chat-box-toggle"><img class="chatbox2-close-icon" src="./imgs/close.png" alt="close"></span>
+            <div class="row img-icons-in">
+              <span class="msg-avatar">
+                  <img src="./imgs/user-img-icon.png" class="img-per">
                 </span>
-                <span class="msg-avatar">
-                  <img src="https://image.crisp.im/avatar/operator/196af8cc-f6ad-4ef7-afd1-c45d5231387c/240/?1483361727745" class="img-per">
+              <span class="msg-avatar">
+                  <img src="./imgs/user-img-icon.png" class="img-per">
                 </span>
-                <span class="msg-avatar">
-                  <img src="https://image.crisp.im/avatar/operator/196af8cc-f6ad-4ef7-afd1-c45d5231387c/240/?1483361727745" class="img-per">
+              <span class="msg-avatar">
+                  <img src="./imgs/user-img-icon.png" class="img-per">
                 </span>
-              </div>
-              <div class="row img-text-down">
-                <span class="img-text">Kellin</span>
-                <span class="img-text1">Joseph</span>
-                <span class="img-text2">Ewan</span>
-              </div>
-              <div class="row ask-mark-text">
-                <span class="ask-mark">Ask us anything. we're here to help!</span>
+            </div>
+            <div class="row img-text-down">
+              <span class="img-text">Kellin</span>
+              <span class="img-text1">Joseph</span>
+              <span class="img-text2">Ewan</span>
+            </div>
+            <div class="row ask-mark-text">
+              <span class="ask-mark">Ask us anything. we're here to help!</span>
 
-              </div>
-              <div class="row ask-mark-text2">
-                <span class="ask-mark">Typically replies in a few  hours</span>
+            </div>
+            <div class="row ask-mark-text2">
+              <span class="ask-mark">Typically replies in a few  hours</span>
 
+            </div>
+          </div>
+
+          <div class="chat-box-body">
+            <div class="chat-box-overlay">
+
+            </div>
+            <div class="chat-logs2">
+              <div class="chat-per2">
+                <div class="intercom-div">
+                  <img class="mi" src="./imgs/intercon-icon.png" alt="">
+                  <span class="intercom">
+                      We run on Intercom
+                    </span>
+                </div>
               </div>
             </div>
 
-            <div class="chat-box-body">
-              <div class="chat-box-overlay">
 
-              </div>
-              <div class="chat-logs2">
-                <div class="chat-per2">
-                  <div class="intercom-div">
-                    <img class="mi" src="./imgs/intercon-icon.png" alt="">
-                    <span class="intercom">
-                      We run on Intercom
-                    </span>
-                    </div>
-                  </div>
-                  </div>
-
-
-                </div>
-                <div class="chat-input">
-                  <form>
-                  <div class="input-group">
-                    <input type="text" id="chat-input-new" placeholder="Send a message..." />
-                    <!-- <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2"> -->
-                    <span class="input-group-addon" id="basic-addon2">    <img id="gif" class="message-icons" src="./imgs/gif.png" alt="">
+          </div>
+          <div class="chat-input">
+            <form>
+              <div class="input-group">
+                <input type="text" id="chat-input-new" placeholder="Send a message..." />
+                <!-- <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2"> -->
+                <span class="input-group-addon" id="basic-addon2">
+                  <img id="gif" class="message-icons" src="./imgs/gif.png" alt="">
+                  <!-- <svg viewBox="0 0 29 18"><g fill-rule="evenodd"><path d="M9 1a8 8 0 1 0 0 16h11a8 8 0 1 0 0-16H9zm0-1h11a9 9 0 0 1 0 18H9A9 9 0 0 1 9 0z" fill-rule="nonzero"></path><path d="M6.561 9.337c0-2.277 1.683-3.795 3.773-3.795 1.298 0 2.2.572 2.849 1.375l-.726.451c-.462-.594-1.243-1.012-2.123-1.012-1.606 0-2.827 1.232-2.827 2.981 0 1.738 1.221 2.992 2.827 2.992.88 0 1.606-.429 1.969-.792v-1.496H9.784v-.814h3.432v2.651a3.822 3.822 0 0 1-2.882 1.265c-2.09 0-3.773-1.529-3.773-3.806zM14.701 13V5.663h.913V13h-.913zm2.629 0V5.663h4.807v.814h-3.894v2.365h3.817v.814h-3.817V13h-.913z"></path></g></svg> -->
                       <img id="smile-icon" class="message-icons" src="./imgs/smile-icon.png" alt="">
                     <img id="clip-icon" class="message-icons" src="./imgs/clip-icon.png" alt=""></span>
-                  </div>
+              </div>
 
-                  </form>
-                </div>
+            </form>
+          </div>
         </div>
         <div class="chatbox3" style="display:none">
           <div class="chat-box-header2 chat-id-header">
 
-              <span class="chat-box-toggle"><img class="chatbox2-close-icon close-icon" src="./imgs/close.png" alt="close"></span>
-              <div class="row img-icons-in">
-                <img id="left-arrow" class="left-icon-chatbox" src="./imgs/left-arrow.png" alt="">
-                <span class="msg-avatar chat-img-box-header">
-                  <img src="https://image.crisp.im/avatar/operator/196af8cc-f6ad-4ef7-afd1-c45d5231387c/240/?1483361727745" class="img-per chat-id-img-per">
+            <span class="chat-box-toggle"><img class="chatbox2-close-icon close-icon" src="./imgs/close.png" alt="close"></span>
+            <div class="row img-icons-in">
+              <img id="left-arrow" class="left-icon-chatbox" src="./imgs/left-arrow.png" alt="">
+              <span class="msg-avatar chat-img-box-header">
+                  <img src="./imgs/user-img-icon.png" class="img-per chat-id-img-per">
                   <span class="chat-box-img-text">Janhavi<br /><span>Away</span></span>
 
-                </span>
-              </div>
-              <!-- <div class="row img-text-down">
+              </span>
+            </div>
+            <!-- <div class="row img-text-down">
 
               </div> -->
-            </div>
-            <div class="chat-box-body">
-              <div class="chat-box-overlay">
+          </div>
+          <div class="chat-box-body">
+            <div class="chat-box-overlay">
 
-              </div>
-              <div class="chat-logs2 chat-id-box">
-                <div class="chat-per2">
-                  <div class="chat-box-bodytext">
-                    <div class="inner-chat-box-bodytext">
-                      <img src="https://image.crisp.im/avatar/operator/196af8cc-f6ad-4ef7-afd1-c45d5231387c/240/?1483361727745" class="imginbodytext">
-                      <span class="innertext"><strong>Janhavi</strong><span> from IBM Cloud</span></span>
-                      <div class="innerdivtext">
-                        <p>Hi Arpit,</p>
-                          <p>Hope you are making lot of progress on Bluemix!</p>
-                          <p>Did you know we have atalented team of a real humans back here who can help you get up and running? If you are already running, they can even help you run faster!</p>
-                          <p>So if you need any help, what are you waiting for? Shoot us a message!</p>
-                      </div>
+            </div>
+            <div class="chat-logs3 chat-id-box">
+              <div class="chat-per2">
+                <div class="chat-box-bodytext">
+                  <div class="inner-chat-box-bodytext">
+                    <img src="./imgs/user-img-icon.png" class="imginbodytext">
+                    <span class="innertext"><strong>Janhavi</strong><span> from IBM Cloud</span></span>
+                    <div class="innerdivtext">
+                      <p>Hi Arpit,</p>
+                      <p>Hope you are making lot of progress on Bluemix!</p>
+                      <p>Did you know we have atalented team of a real humans back here who can help you get up and running? If you are already running, they can even help you run faster!</p>
+                      <p>So if you need any help, what are you waiting for? Shoot us a message!</p>
                     </div>
                   </div>
-                  <div class="intercom-div">
-                    <img class="mi" src="./imgs/intercon-icon.png" alt="">
-                    <span class="intercom">
+                </div>
+                <div class="intercom-div">
+                  <img class="mi" src="./imgs/intercon-icon.png" alt="">
+                  <span class="intercom">
                       We run on Intercom
                     </span>
-                    </div>
-                  </div>
-                  </div>
-
-
                 </div>
-                <div class="chat-input">
-                  <form>
-                  <div class="input-group">
-                    <input type="text" id="chat-input-new" placeholder="write a reply..." />
-                    <!-- <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2"> -->
-                    <span class="input-group-addon" id="basic-addon2">    <img id="gif" class="message-icons" src="./imgs/gif.png" alt="">
+              </div>
+            </div>
+
+
+          </div>
+          <div class="chat-input">
+            <form>
+              <div class="input-group">
+                <input type="text" id="chatbox3-chat-input-new" placeholder="write a reply..." />
+                <!-- <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2"> -->
+                <span class="input-group-addon" id="basic-addon2">    <img id="gif" class="message-icons" src="./imgs/gif.png" alt="">
                       <img id="smile-icon" class="message-icons" src="./imgs/smile-icon.png" alt="">
                     <img id="clip-icon" class="message-icons" src="./imgs/clip-icon.png" alt=""></span>
-                  </div>
+              </div>
 
-                  </form>
-                </div>
+            </form>
+          </div>
         </div>
       </div>
 
@@ -743,99 +759,182 @@
   <script type="text/javascript">
     $(function() {
       var INDEX = 0;
-      $("#chat-submit").click(function(e) {
-        e.preventDefault();
-        var msg = $("#chat-input").val();
-        if (msg.trim() == '') {
-          return false;
+      $(document).on("keypress", "#chat-input-new", function(e) {
+        if (e.which == 13) {
+          {
+            e.preventDefault();
+            var msg = $("#chat-input-new").val();
+            if (msg.trim() == '') {
+              return false;
+            }
+            generate_message(msg, 'self');
+            var buttons = [{
+                name: 'Existing User',
+                value: 'existing'
+              },
+              {
+                name: 'New User',
+                value: 'new'
+              }
+            ];
+            setTimeout(function() {
+              generate_message(msg, 'user');
+            }, 1000)
+
+          }
         }
-        // generate_message(msg, 'self');
-        // var buttons = [{
-        //     name: 'Existing User',
-        //     value: 'existing'
-        //   },
-        //   {
-        //     name: 'New User',
-        //     value: 'new'
-        //   }
-        // ];
-        setTimeout(function() {
-          generate_message(msg, 'user');
-        }, 1000)
+      });
+      $(document).on("keypress", "#chatbox3-chat-input-new", function(e) {
+        if (e.which == 13) {
+          {
+            e.preventDefault();
+            var msg = $("#chatbox3-chat-input-new").val();
+            if (msg.trim() == '') {
+              return false;
+            }
+            generate_message_chatbox3(msg, 'self');
+            var buttons = [{
+                name: 'Existing User',
+                value: 'existing'
+              },
+              {
+                name: 'New User',
+                value: 'new'
+              }
+            ];
+            setTimeout(function() {
+              generate_message_chatbox3(msg, 'user');
+            }, 1000)
 
-      })
+          }
+        }
+      });
+      // $("#chat-input-new").click(function(e) {
+      //   e.preventDefault();
+      //   var msg = $("#chat-input-new").val();
+      //   if (msg.trim() == '') {
+      //     return false;
+      //   }
+      //   generate_message(msg, 'self');
+      //   var buttons = [{
+      //       name: 'Existing User',
+      //       value: 'existing'
+      //     },
+      //     {
+      //       name: 'New User',
+      //       value: 'new'
+      //     }
+      //   ];
+      //   setTimeout(function() {
+      //     generate_message(msg, 'user');
+      //   }, 1000)
+      //
+      // })
 
-      // function generate_message(msg, type) {
+      function generate_message(msg, type) {
+        INDEX++;
+        var img = "            <img src=\"https:\/\/image.crisp.im\/avatar\/operator\/196af8cc-f6ad-4ef7-afd1-c45d5231387c\/240\/?1483361727745\">";
+        if (INDEX % 2 == 0) {
+          msg = ".....";
+          img = "            <img src=\".\/imgs\/user-img-icon.png\">";
+        }
+        var str = "";
+        str += "<div id='cm-msg-" + INDEX + "' class=\"chat-msg " + type + "\">";
+        str += "          <span class=\"msg-avatar\">";
+        str += img;
+        str += "          <\/span>";
+        str += "          <div class=\"cm-msg-text\">";
+        str += msg;
+        str += "          <\/div>";
+        str += "        <\/div>";
+        $(".chat-logs2").append(str);
+        $("#cm-msg-" + INDEX).hide().fadeIn(300);
+        // $(".chat-msg:odd").css("padding": "10px 10px 0px 10px" "display": "block" "float": "right");
+        if (type == 'self') {
+          $("#chat-input-new").val('');
+        }
+        $(".chat-logs2").stop().animate({
+          scrollTop: $(".chat-logs2")[0].scrollHeight
+        }, 1000);
+      }
+
+      function generate_message_chatbox3(msg, type) {
+        INDEX++;
+        var img = "            <img src=\"https:\/\/image.crisp.im\/avatar\/operator\/196af8cc-f6ad-4ef7-afd1-c45d5231387c\/240\/?1483361727745\">";
+        if (INDEX % 2 == 0) {
+          msg = ".....";
+          img = "            <img src=\".\/imgs\/user-img-icon.png\">";
+        }
+        var str = "";
+        str += "<div id='cm-msg-" + INDEX + "' class=\"chat-msg " + type + "\">";
+        str += "          <span class=\"msg-avatar\">";
+        str += img;
+        str += "          <\/span>";
+        str += "          <div class=\"cm-msg-text\">";
+        str += msg;
+        str += "          <\/div>";
+        str += "        <\/div>";
+        $(".chat-logs3").append(str);
+        $("#cm-msg-" + INDEX).hide().fadeIn(300);
+        // $(".chat-msg:odd").css("padding": "10px 10px 0px 10px" "display": "block" "float": "right");
+        if (type == 'self') {
+          $("#chatbox3-chat-input-new").val('');
+        }
+        $(".chat-logs3").stop().animate({
+          scrollTop: $(".chat-logs3")[0].scrollHeight
+        }, 1000);
+      }
+
+      // function generate_button_message(msg, buttons) {
+      //   /* Buttons should be object array
+      //     [
+      //       {
+      //         name: 'Existing User',
+      //         value: 'existing'
+      //       },
+      //       {
+      //         name: 'New User',
+      //         value: 'new'
+      //       }
+      //     ]
+      //   */
       //   INDEX++;
+      //   var btn_obj = buttons.map(function(button) {
+      //     return "              <li class=\"button\"><a href=\"javascript:;\" class=\"btn btn-primary chat-btn\" chat-value=\"" + button.value + "\">" + button.name + "<\/a><\/li>";
+      //   }).join('');
       //   var str = "";
-      //   str += "<div id='cm-msg-" + INDEX + "' class=\"chat-msg " + type + "\">";
+      //   str += "<div id='cm-msg-" + INDEX + "' class=\"chat-msg user\">";
       //   str += "          <span class=\"msg-avatar\">";
       //   str += "            <img src=\"https:\/\/image.crisp.im\/avatar\/operator\/196af8cc-f6ad-4ef7-afd1-c45d5231387c\/240\/?1483361727745\">";
       //   str += "          <\/span>";
       //   str += "          <div class=\"cm-msg-text\">";
       //   str += msg;
       //   str += "          <\/div>";
+      //   str += "          <div class=\"cm-msg-button\">";
+      //   str += "            <ul>";
+      //   str += btn_obj;
+      //   str += "            <\/ul>";
+      //   str += "          <\/div>";
       //   str += "        <\/div>";
       //   $(".chat-logs").append(str);
       //   $("#cm-msg-" + INDEX).hide().fadeIn(300);
-      //   if (type == 'self') {
-      //     $("#chat-input").val('');
-      //   }
       //   $(".chat-logs").stop().animate({
       //     scrollTop: $(".chat-logs")[0].scrollHeight
       //   }, 1000);
+      //   $("#chat-input").attr("disabled", true);
       // }
-
-      function generate_button_message(msg, buttons) {
-        /* Buttons should be object array
-          [
-            {
-              name: 'Existing User',
-              value: 'existing'
-            },
-            {
-              name: 'New User',
-              value: 'new'
-            }
-          ]
-        */
-        INDEX++;
-        var btn_obj = buttons.map(function(button) {
-          return "              <li class=\"button\"><a href=\"javascript:;\" class=\"btn btn-primary chat-btn\" chat-value=\"" + button.value + "\">" + button.name + "<\/a><\/li>";
-        }).join('');
-        var str = "";
-        str += "<div id='cm-msg-" + INDEX + "' class=\"chat-msg user\">";
-        str += "          <span class=\"msg-avatar\">";
-        str += "            <img src=\"https:\/\/image.crisp.im\/avatar\/operator\/196af8cc-f6ad-4ef7-afd1-c45d5231387c\/240\/?1483361727745\">";
-        str += "          <\/span>";
-        str += "          <div class=\"cm-msg-text\">";
-        str += msg;
-        str += "          <\/div>";
-        str += "          <div class=\"cm-msg-button\">";
-        str += "            <ul>";
-        str += btn_obj;
-        str += "            <\/ul>";
-        str += "          <\/div>";
-        str += "        <\/div>";
-        $(".chat-logs").append(str);
-        $("#cm-msg-" + INDEX).hide().fadeIn(300);
-        $(".chat-logs").stop().animate({
-          scrollTop: $(".chat-logs")[0].scrollHeight
-        }, 1000);
-        $("#chat-input").attr("disabled", true);
-      }
-
-      $(document).delegate(".chat-btn", "click", function() {
-        var value = $(this).attr("chat-value");
-        var name = $(this).html();
-        $("#chat-input").attr("disabled", false);
-        generate_message(name, 'self');
-      })
+      //
+      // $(document).delegate(".chat-btn", "click", function() {
+      //   var value = $(this).attr("chat-value");
+      //   var name = $(this).html();
+      //   $("#chat-input").attr("disabled", false);
+      //   generate_message(name, 'self');
+      // })
 
       $("#chat-circle").click(function() {
         console.log('click');
         $("#chat-circle").toggle('scale');
-          console.log("hiiii");
+        console.log("hiiii");
         $(".chat-box").toggle('scale');
       })
 
@@ -850,42 +949,59 @@
 
 
 
-    window.onscroll = function() {scrollFunction()};
+    window.onscroll = function() {
+      scrollFunction()
+    };
 
     function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("myBtn").style.display = "block";
-        } else {
-            document.getElementById("myBtn").style.display = "none";
-        }
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
     }
 
     // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
     }
     $(".conversations-btn").click(function() {
       $('.chatbox1').slideUp();
       $('.chatbox2').slideDown();
-    console.log('click');
+      console.log('click');
     })
-    $('.chatbox1-body').click(function () {
+    $('.chatbox1-body').click(function() {
       console.log('click');
       $('.chatbox1').slideUp();
-        $('.chatbox3').slideDown();
+      $('.chatbox3').slideDown();
     })
-    $('#left-arrow').click(function () {
-        console.log('click');
-        $('.chatbox3').slideUp();
-        $('.chatbox1').slideDown();
+    $('#left-arrow').click(function() {
+      console.log('click');
+      $('.chatbox3').slideUp();
+      $('.chatbox1').slideDown();
     })
-    $('#left-arrow-chatbox2').click(function () {
-        console.log('click');
-        $('.chatbox2').slideUp();
-        $('.chatbox1').slideDown();
+    $('#left-arrow-chatbox2').click(function() {
+      console.log('click');
+      $('.chatbox2').slideUp();
+      $('.chatbox1').slideDown();
     })
+    // $("#chat-circle").hide();
+    // $("#chat-circle").delay(10000).fadeIn(100);
+    // $("#tile_MIHU").hide();
+    // $("#tile_MIHU").delay(10000).fadeIn(100);
 
+    $(document).ready(function() {
 
+      $('body').addClass('js');
+      var $menu = $('#menu'),
+        $menulink = $('.menu-link');
+
+      $menulink.click(function() {
+        $menulink.toggleClass('active');
+        $menu.toggleClass('active');
+        return false;
+      });
+    });
   </script>
 </body>
