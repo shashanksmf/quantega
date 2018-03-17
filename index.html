@@ -21,16 +21,72 @@
       <div class="nav-list">
         <img src="./imgs/list-icon.png" href="#menu" class="menu-link" />
         <nav id="menu" role="navigation">
-          <ul class="nav-menu-dd">
-            <li><a href="#">INDUSTRIES</a></li>
-            <li><a href="#">SERVICES & PRODUCTS</a></li>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="#">THINGQ</a></li>
-            <li><a href="career.html">CAREERS</a></li>
-            <li><a href="#">CONTACT US</a></li>
-          </ul>
+          <div class="dd-ul">
+            <ul class="nav-menu-dd">
+              <div class="dd-li">
+                <li class="industries-li">
+                  <div class="industries-item">
+                    <span>Industries</span>
+                    <img src="./imgs/play-icon.png" class="industries-play-icon" />
+                    <img src="./imgs/down-arrow-icon.png" class="industries-down-icon" />
+                  </div>
+                </li>
+                <div class="industries-content">
+                  <div class="column">
+                    <a href="#">&#9654; Aerospace and Defence</a>
+                    <a href="#">&#9654; Automotive</a>
+                    <a href="#">&#9654; Banking</a>
+                    <a href="#">&#9654; Capital market</a>
+                    <a href="#">&#9654; Chemical and Process Industries</a>
+                    <a href="#">&#9654; Consumer Gooda</a>
+                    <a href="#">&#9654; HealthCare</a>
+                    <a href="#">&#9654; Hi-Tech</a>
+                    <a href="#">&#9654; Industrial Manufacturing</a>
+                    <a href="#">&#9654; Insurance</a>
+                    <a href="#">&#9654; Life Sciences</a>
+                    <a href="#">&#9654; Manufacturing Industries</a>
+                    <a href="#">&#9654; Media and Entertainment</a>
+                    <a href="#">&#9654; Mining and Natural Resources</a>
+                    <a href="#">&#9654; oil and Gas</a>
+                    <a href="#">&#9654; Retail</a>
+                    <a href="#">&#9654; Telecom</a>
+                    <a href="#">&#9654; Travel,Transport,Logistics&Hospitality</a>
+                  </div>
+                </div>
+                <li class="service-li">
+                  <div class="service-item">
+                    <span>Services & Products</span>
+                  </div>
+                </li>
+                <li class="aboutus-li">
+                  <a href="about.html">About Us</a>
+                </li>
+                <li class="thingq-li">
+                  <div class="thingq-item">
+                    <span>ThinQ</span>
+                    <img src="./imgs/play-icon.png" class="thingq-play-icon" />
+                    <img src="./imgs/down-arrow-icon.png" class="thingq-down-icon" />
+                  </div>
+                </li>
+                <div class="thingq-content">
+                  <div class="column">
+                    <a href="#">&#9654; ThinQ Home</a>
+                    <a href="#">&#9654; ThinQ Indie</a>
+                    <a href="#">&#9654; ThinQ Tag</a>
+                    <a href="#">&#9654; ThinQ Category</a>
+                    <a href="#">&#9654; ThinQ Search</a>
+                  </div>
+                </div>
+                <li class="career-li">
+                  <a href="career.html">Career</a>
+                </li>
+                <li class="contaact-li">
+                  <a href="campus.html">Contact Us</a>
+                </li>
+              </div>
+            </ul>
+          </div>
         </nav>
-      </div>
       </div>
       <div class="app-logo">
         LOGO
@@ -256,7 +312,7 @@
             <div class="">
               <ul class="ul-list-remove-bullate">
                 <li><span class="cons-head">Conversations</span></li>
-                <li><span class="cons-head-text">with IBM Cloud</span></li>
+                <li><span class="cons-head-text">with Quantega</span></li>
               </ul>
 
             </div>
@@ -322,7 +378,7 @@
         <div class="chatbox2" style="display:none">
           <div class="chat-box-header2">
             <img id="left-arrow-chatbox2" class="left-icon-chatbox2" src="./imgs/left-arrow.png" alt="">
-            <span class="cons-head">IBM Cloud</span>
+            <span class="cons-head">Quantega </span>
             <span class="chat-box-toggle"><img class="chatbox2-close-icon" src="./imgs/close.png" alt="close"></span>
             <div class="row img-icons-in">
               <span class="msg-avatar">
@@ -407,7 +463,7 @@
                 <div class="chat-box-bodytext">
                   <div class="inner-chat-box-bodytext">
                     <img src="./imgs/user-img-icon.png" class="imginbodytext">
-                    <span class="innertext"><strong>Janhavi</strong><span> from IBM Cloud</span></span>
+                    <span class="innertext"><strong>Janhavi</strong><span> from Quantega</span></span>
                     <div class="innerdivtext">
                       <p>Hi Arpit,</p>
                       <p>Hope you are making lot of progress on Bluemix!</p>
@@ -416,12 +472,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="intercom-div">
+                <!-- <div class="intercom-div">
                   <img class="mi" src="./imgs/intercon-icon.png" alt="">
                   <span class="intercom">
                       We run on Intercom
                     </span>
-                </div>
+                </div> -->
               </div>
             </div>
 
@@ -932,7 +988,7 @@
       // })
 
       $("#chat-circle").click(function() {
-        console.log('click');
+        $('#myBtn').css('display', 'none');
         $("#chat-circle").toggle('scale');
         console.log("hiiii");
         $(".chat-box").toggle('scale');
@@ -953,13 +1009,13 @@
       scrollFunction()
     };
 
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-      } else {
-        document.getElementById("myBtn").style.display = "none";
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("myBtn").style.display = "block";
+        } else {
+          document.getElementById("myBtn").style.display = "none";
+        }
       }
-    }
 
     // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
@@ -986,12 +1042,44 @@
       $('.chatbox2').slideUp();
       $('.chatbox1').slideDown();
     })
+    // $(function() { // you can wrap it here with in document ready block
+    //   var i = 0;
+    //   $("p").click(function() {
+    //     $(this).html(i++);
+    //   });
+    // });
+
+    $('.industries-item').click(function() {
+      var click = +$(this).data('clicks') || 0;
+      if (click % 2 == 1) {
+        $(".industries-play-icon").css("display", "");
+      } else {
+        $(".industries-play-icon").css("display", "none");
+      };
+      $(this).data('clicks', click + 1);
+
+      $(".industries-down-icon").toggle();
+      $(".industries-content").toggle();
+    })
+    $('.thingq-item').click(function() {
+      var click = +$(this).data('clicks') || 0;
+      if (click % 2 == 1) {
+        $(".thingq-play-icon").css("display", "");
+      } else {
+        $(".thingq-play-icon").css("display", "none");
+      };
+      $(this).data('clicks', click + 1);
+      $(".thingq-down-icon").toggle();
+      $(".thingq-content").toggle();
+    })
+
     // $("#chat-circle").hide();
     // $("#chat-circle").delay(10000).fadeIn(100);
     // $("#tile_MIHU").hide();
     // $("#tile_MIHU").delay(10000).fadeIn(100);
 
     $(document).ready(function() {
+
 
       $('body').addClass('js');
       var $menu = $('#menu'),

@@ -20,7 +20,8 @@ html, body {
   height: 42px;
   border-radius: 50%;
   color: white;
-  cursor: pointer
+  cursor: pointer;
+  z-index: 99999999999999;
 }
 
 .btn#my-btn {
@@ -82,10 +83,10 @@ html, body {
 
 .chat-box-body {
   position: relative;
-  height: 370px;
-  height: auto;
-  border: 1px solid #ccc;
-  overflow: hidden;
+
+    /* height: auto; */
+    border: 1px solid #ccc;
+
 }
 
 .chat-box-body:after {
@@ -332,7 +333,7 @@ margin-top: -8px;
 }
 
 .chat-logs2 {
-  height: 300px;
+  height: 200px;
   overflow: auto;
 }
 
@@ -365,7 +366,7 @@ margin-top: -8px;
   height: 35px;
   border-radius: 50%;
   /* margin: 10px; */
-  margin-left: -80px;
+
 }
 
 .chat-box-img-text {
