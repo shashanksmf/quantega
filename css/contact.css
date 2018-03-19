@@ -1,0 +1,305 @@
+.row {
+  margin: 0 !important;
+}
+
+.new-container {
+  height: 100%;
+  margin-top: 100px;
+  width: 100%;
+}
+
+new-nav div {}
+
+new-nav {
+  width: 100%;
+  top: 52px;
+  position: fixed;
+  display: flex;
+  border-bottom: 2px solid #ddd;
+  background: #fff;
+  z-index: 99999;
+}
+
+.ul-container {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.li-content {
+  float: right;
+  margin: 2px;
+}
+
+.li-content a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.li-content a:hover:not(.active) {
+  background-color: #007bcd;
+  color: #fff;
+}
+
+.active {
+  /* background-color: #4CAF50; */
+}
+
+.img-div {
+  height: 450px;
+  top: 104px;
+  position: inherit !important;
+  background: url('https://www.hcltech.com/sites/default/files/general_event_campaign_image/banner.jpg');
+}
+
+.tooltip {
+  z-index: 99999;
+}
+
+.map-div {
+  top: 40px;
+  height: 400px;
+  /* background: url('../imgs/world.png'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative !important;
+}
+
+.map-marker {
+  margin: -3px 0 0 -3px;
+  position: absolute;
+  height: 12px;
+  cursor: pointer;
+  width: 12px;
+  background: #f5642d;
+  border-radius: 50%;
+  transition: all 300ms;
+  will-change: transition;
+}
+
+.map-marker:hover div {
+  transform: scale(3);
+}
+
+.map-holder {
+  height: min-content;
+  text-align: left;
+      height: 390px;
+}
+
+.animate1 {
+  transition: all 500ms;
+  will-change: transform;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background: orange;
+  position: absolute;
+  animation: mychange infinite;
+  animation-duration: 3s;
+  border: 1px solid orange;
+}
+
+@keyframes mychange {
+  from {
+    background: #f5642d;
+  }
+  to {
+    background: #fff;
+  }
+}
+
+.point1 {
+  top: 26.537534%;
+  left: 7.704688%;
+}
+
+.point2 {
+  top: 71.837534%;
+  left: 8.604688%;
+}
+
+.point3 {
+  top: 47.837534%;
+  left: 14.304688%;
+}
+.point5{
+  top: 36%;
+  left: 12%;
+}
+.point4{
+  top: 63%;
+      left: 33%;
+}
+.point6{
+  top: 49%;
+    left: 42%;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 2s;
+  overflow: hidden;
+  height: 350px;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+  transition: all .4s ease;
+  width: 180px;
+  height: auto;
+  /* margin: 20px; */
+  max-width: 180px;
+}
+
+.rounded-circle:hover, .rounded-circle:active, .rounded-circle:focus {
+  /**adjust scale to desired size,
+add browser prefixes**/
+  /* -ms-transform: scale(2.5);
+-moz-transform: scale(2.5);
+-webkit-transform: scale(2.5);
+-o-transform: scale(2.5);
+transform: scale(1.2); */
+  transform: scale(1.2);
+  position: relative;
+  z-index: 100;
+  margin: 0px;
+}
+
+@-webkit-keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 200px;
+  }
+}
+
+.leadership {
+  padding-top: 50px;
+  height: 600px;
+}
+
+.leadership h2 {
+  padding-bottom: 50px;
+}
+
+.avatar {
+  display: inline-block;
+  height: 180px;
+  overflow: hidden;
+      max-width: 100%;
+          border-radius: 100px;
+}
+
+.team-section {
+  width: 100%;
+}
+
+.Headquater{
+  border: 1px solid #365899 ;
+  text-align: left;
+    left: 0;
+    position: absolute;
+    height: 125px;
+
+}
+.Headquater h2{
+      padding: 5px 35px;
+      background: #365899;
+      margin: 0;
+      color: #fff;
+}
+.Headquater-india{
+  border: 1px solid #365899 ;
+  text-align: left;
+    left: 0;
+    position: absolute;
+    height: 125px;
+    bottom: 0;
+
+}
+.Headquater-india h2{
+      padding: 5px 35px;
+      background: #365899;
+      margin: 0;
+      color: #fff;
+}
+.Headquater-india p{
+  margin: 0px 5px 10px;
+}
+.india-div-header{
+  margin-left: 120px;
+  margin-top: 72px;
+  height: 225px;
+}
+.nav-1{
+  padding-top: 70px;
+      /* height: 70%;
+      padding: 20px; */
+}
+.contact-form{
+  display: flex;
+    flex-wrap: wrap;
+    float: right;
+  padding: 40px;
+  background: -webkit-linear-gradient(left, #31a5dd 0%, #70b345 100%);
+
+    margin-right: 100px;
+    padding-left: 0px;
+
+}
+.inn{
+
+  width: 0;
+    height: 0px;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid white;
+    margin-top: 27px;
+    margin-right: 20px;
+
+}
+.padBotm{
+  padding-bottom: 30px;
+}
+.contact-form-input{
+  width: 300px;
+}
+.sign-with-link{
+  text-align: center;
+}
+.sign-with-link button{
+  width: 171px;
+}
+.up-file{
+  position: relative;
+ overflow: hidden;
+     background: transparent!important;
+color: black !important;
+font-size: 33px !important;
+    padding: 0px 11px 0px 11px !important;
+}
+.up-file input{
+  position: absolute;
+    font-size: 50px;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+.lable-for-upload {
+color: white !important;
+}
+.details{
+  color: white;
+    font-size: 15px;
+}
+.change-text{
+  text-align: center;
+}

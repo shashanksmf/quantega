@@ -590,7 +590,7 @@ margin: 0 auto;
 .main-item{
   border-bottom: 4px solid transparent;
     padding: 0px 8px;
-  border-bottom-color: #365899 !important;
+  /* border-bottom-color: #365899 !important; */
   height: 57px;
 }
 main-item::after{

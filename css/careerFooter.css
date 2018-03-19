@@ -154,3 +154,15 @@ ul.h-no-bullet, ol.h-no-bullet, dl.h-no-bullet, li.h-no-bullet {
 .new-global {
   padding-bottom: 2px;
 }
+
+.nav-1{
+    padding-top: 70px;
+    padding-left: 20px;
+}
+.dashboard-india-map{
+  margin: 0;
+  height: 375px;
+/* padding: 0; */
+/* width: 40%; */
+padding: 20px;
+}
