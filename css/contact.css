@@ -8,7 +8,7 @@
   width: 100%;
 }
 
-new-nav div {}
+
 
 new-nav {
   width: 100%;
@@ -365,7 +365,7 @@ border-bottom-color: unset !important;
     display: inline-block;
     color: #fff;
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 850px) {
     .map-tab{
       display: none;
     }

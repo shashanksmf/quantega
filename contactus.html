@@ -247,77 +247,69 @@
 
       <div class="tab-content">
         <div id="home" class="tab-pane fade in active">
-          <div class="col-sm-12 map-div">
-            <div class="map-holder-india" style="margin: 0 auto;padding: 0;width: 100%;position:relative">
-              <div class="dashboard-india-map">
-                <img src="/imgs/india-map.jpg" class="india-map" alt="">
-                <div class="map-marker cbutton--click cbutton--effect-jagoda plant-marker point1" data-toggle="tooltip" title="Delhi!" data-id="delhi" data-offset="-16">
-                  <div class="animate1"></div>
-
-                  <!-- <div class="" style="transition:all 500ms;will-change:transform;height:100%;width:100%;border-radius:50%;background:orange;position:absolute"></div> -->
-                </div>
-                <div class="map-marker cbutton--click cbutton--effect-jagoda plant-marker point2" data-id="hyd" data-toggle="tooltip" title="Hyderabad!" data-offset="-16">
-                  <div class="animate1"></div>
-
-                  <!-- <div class="" style="transition:all 500ms;will-change:transform;height:100%;width:100%;border-radius:50%;background:orange;position:absolute"></div> -->
-                </div>
-                <div class="map-marker cbutton--click cbutton--effect-jagoda plant-marker point3" data-id="kol" data-toggle="tooltip" title="kolkata!" data-offset="-16">
-                  <div class="animate1"></div>
-                </div>
-              </div>
-
-
-            </div >
-            <div class=" col-sm-4">
-              <form class=" contact-form">
-                <div class=" inn">
-                </div>
-                <div class="contact-form-input">
-                  <div class="form-group change-text">
-                    <span class="details">Contact Office: <span  class="mapclick"></span> </span><br>
+          <div class="row">
+            <div class="col-sm-12 map-div">
+              <div class="map-holder-india" style="margin: 0 auto;padding: 0;width: 100%;position:relative">
+                <div class="dashboard-india-map">
+                  <img src="/imgs/india-map.jpg" class="india-map" alt="">
+                  <div class="map-marker cbutton--click cbutton--effect-jagoda plant-marker point1" data-toggle="tooltip" title="Delhi!" data-id="delhi" data-offset="-16">
+                    <div class="animate1"></div>
                   </div>
-                  <div class="form-group sign-with-link padBotm">
+                  <div class="map-marker cbutton--click cbutton--effect-jagoda plant-marker point2" data-id="hyd" data-toggle="tooltip" title="Hyderabad!" data-offset="-16">
+                    <div class="animate1"></div>
+                  </div>
+                  <div class="map-marker cbutton--click cbutton--effect-jagoda plant-marker point3" data-id="kol" data-toggle="tooltip" title="kolkata!" data-offset="-16">
+                    <div class="animate1"></div>
+                  </div>
+                </div>
+              </div >
+
+              <div class=" col-sm-4">
+                <form class=" contact-form">
+                  <div class=" inn">
+                  </div>
+                  <div class="contact-form-input">
+                    <div class="form-group change-text">
+                      <span class="details">Contact Office: <span  class="mapclick"></span> </span><br>
+                    </div>
+                    <div class="form-group sign-with-link padBotm">
+                      <button type="submit" class="btn btn-primary social-btn">Sign in</button>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="input-full-name" placeholder="Full Name*">
+
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="input-business-email" placeholder="Business Email Address*">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="input-organization" placeholder="Organization/Institution*">
+                    </div>
+                    <div class="form-group">
+                      <input type="number" class="form-control" id="input-phone" placeholder="Phone/Mobile*">
+                    </div>
+                    <div class="form-group">
+                      <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="2" id="comment" placeholder="Query*"></textarea>
+                    </div>
+                  <div class="form-group sign-with-link">
                     <button type="submit" class="btn btn-primary social-btn">Sign in</button>
                   </div>
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="input-full-name" placeholder="Full Name*">
-
-                  </div>
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="input-business-email" placeholder="Business Email Address*">
-                  </div>
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="input-organization" placeholder="Organization/Institution*">
-                  </div>
-                  <div class="form-group">
-                    <input type="number" class="form-control" id="input-phone" placeholder="Phone/Mobile*">
-                  </div>
-                  <div class="form-group">
-                    <select id="inputState" class="form-control">
-                      <option selected>Choose...</option>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <textarea class="form-control" rows="3" id="comment" placeholder="Query*"></textarea>
-                  </div>
-                  <!-- <div class="file up-file btn btn-lg btn-primary">
-                  +
-                  <input type="file" name="file"/>
                 </div>
-                <label class="lable-for-upload " for="edit-upload-multifile">Upload file (RFP, RFI &amp; Others) </label> -->
-
-                <div class="form-group sign-with-link">
-                  <button type="submit" class="btn btn-primary social-btn">Sign in</button>
-                </div>
-              </div>
 
 
-            </form>
+              </form>
 
             </div>
+          </div>
+
           </div>
 
 
@@ -628,6 +620,7 @@
     //     }
     //   });
     // });
+    
   </script>
 
 </body>

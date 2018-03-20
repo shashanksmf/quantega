@@ -130,7 +130,10 @@ ul.h-no-bullet, ol.h-no-bullet, dl.h-no-bullet, li.h-no-bullet {
 }
 
 .h-c-footer-global {
-  margin-right: 50px;
+  margin-right: 20px;
+}
+.h-c-footer__global-links  li{
+  margin-right: 20px;
 }
 
 .h-c-footer__link-new {
