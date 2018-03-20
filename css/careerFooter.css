@@ -134,7 +134,7 @@ ul.h-no-bullet, ol.h-no-bullet, dl.h-no-bullet, li.h-no-bullet {
 }
 
 .h-c-footer__link-new {
-  margin-left: 1056px;
+  /* margin-left: 1056px; */
 }
 
 .div-height {
@@ -157,12 +157,5 @@ ul.h-no-bullet, ol.h-no-bullet, dl.h-no-bullet, li.h-no-bullet {
 
 .nav-1{
     padding-top: 70px;
-    padding-left: 20px;
-}
-.dashboard-india-map{
-  margin: 0;
-  height: 375px;
-/* padding: 0; */
-/* width: 40%; */
-padding: 20px;
+    /* padding-left: 20px; */
 }
